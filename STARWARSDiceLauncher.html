@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang=fr>
+  <head>
+	<script src="https://kit.fontawesome.com/51869bbcae.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+	<link rel="icon" href="xwing.png" type="image/x-icon">
+    <link rel="stylesheet" href="style2.css">
+    <title>STAR WARS Dice launcher</title>
+  </head>
+ <body>
+	<h1><i class="fab fa-jedi-order sw1"></i>STAR WARS DICE LAUNCHER<i class="fab fa-empire sw2"></i></h1>
+	<div id="diceRequest">
+		<div class="objet ship1">
+			<img src="x-wing.png" alt="un X-Wing"/>
+ 		</div>
+ 		<div class="objet ship2">
+ 			<img src="tie.png" alt="un TIE" />
+ 		</div>
+ 		<div class='objet'>		
+			<form method="post">
+				<div class="color-dice">
+					<div class="titleDice">
+						<figure><img src="blueDice.png" alt="a blue dice"></figure>
+						<label for='blue'>Number of blue dices:</label>
+					</div>
+					<div class="Dice">
+						<input type="number" min="0" value="0" max="10" name="Blue" id='blue' />
+					</div>
+				</div>
+				<div class="color-dice">
+					<div class="titleDice">
+						<figure><img src="greenDice.png" alt="a green dice"></figure>
+						<label for='green'>Number of green dices:</label>
+					</div>
+					<div class="Dice">
+						<input type="number" value="0" min="0" max="10" name="green" id='green' />
+					</div>
+				</div>
+				<div class="color-dice">
+					<div class="titleDice">
+						<figure><img src="yellowDice.png" alt="a yellow dice"></figure>
+						<label for='yellow'>Number of yellow dices:</label>
+					</div>
+					<div class="Dice">
+						<input type="number" value="0" min="0" max="10" name="yellow" id='yellow' />
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="objet">	
+			<form method="post">
+				<div class="color-dice">
+					<div class="titleDice">
+						<figure><img src="blackDice.png" alt="a black dice"></figure>
+						<label for='black'>Number of black dices:</label>
+					</div>
+					<div class="Dice">
+						<input type="number" value="0" min="0" max="10" name="black" id='black' />
+					</div>
+				</div>
+				<div class="color-dice">
+					<div class="titleDice">
+						<figure><img src="purpleDice.png" alt="a purple dice"></figure>
+						<label for='purple'>Number of purple dices:</label>
+					</div>
+					<div class="Dice">
+						<input type="number" value="0" min="0" max="10" name="purple" id='purple' />
+					</div>
+				</div>
+				<div class="color-dice">
+					<div class="titleDice">
+						<figure><img src="redDice.png" alt="a red dice"></figure>
+						<label for='red'>Number of red dices:</label>
+					</div>
+					<div class="Dice">
+						<input type="number" value="0" min="0" max="10" name="red" id='red' />
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="objet">
+			<form method="post">
+				<div class="color-dice">
+					<div class="titleDice">
+						<figure>
+							<img src="whiteDice.png" alt="STAR WARS force die"/>
+						</figure>
+						<label for='white'>Number of white dices:</label>
+					</div>
+					<div class="Dice">
+						<input type="number" value="0" min="0" max="10" name="white" id='white'/>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="objet2">
+			<p class="pool">Your dice pool:<br/>
+				<span id="blueNbr">0</span> Blue Dice,<br/>
+				<span id="greenNbr">0</span> Green Dice,<br/>
+				<span id="yellowNbr">0</span> Yellow Dice,<br/>
+				<span id="blackNbr">0</span> Black Dice,<br/>
+				<span id="purpleNbr">0</span> Purple Dice,<br/>
+				<span id="redNbr">0</span> Red Dice,<br/>
+				<span id="whiteNbr">0</span> White Dice.</p>
+		</div>
+		<div class="objet2">
+				<p>May the Force be with you!</p>
+				<button type="button" name="Launch Dices"  id="button"><i class="fab fa-jedi-order"></i>Launch Dices<i class="fab fa-empire"></i></button>
+		</div>
+		<div class="objet2 res">
+			<p>Result:</p><div id=resultat></div>
+		</div>
+	</div>
+	<script src="index.js"></script>
+ </body>
+</html>

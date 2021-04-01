@@ -1,0 +1,182 @@
+
+/*Animation*/
+@keyframes roll{
+	0%{transform:rotate(0deg)}
+	25%{transform:rotate(90deg)}
+	50%{transform:rotate(180deg)}
+	75%{transform:rotate(270deg)}
+	100%{transform:rotate(360deg)}
+}
+@keyframes starfight1{
+	0%{left:0em;top:1em;}
+	20%{left:4.5em;top:1em;}
+	40%{left:4.5em;top:18em;}
+	60%{left:-3.7em;top:18em;}
+	80%{left:-3.7em;top:1em;}
+	100%{left:0em;top:1em;}
+}
+@keyframes starfight2{
+	0%{left:0em;top:1em;}
+	20%{left:3.7em;top:1em;}
+	40%{left:3.7em;top:18em;}
+	60%{left:-4.5em;top:18em;}
+	80%{left:-4.5em;top:1em;}
+	100%{left:0em;top:1em;}
+}
+@keyframes rotation{
+	0%{transform:rotate(0deg);top:0em;}
+	25%{transform:rotate(30deg);top:9em;}
+	50%{transform:rotate(0deg);top:0em;}
+	75%{transform:rotate(-30deg);top:-10em;}
+	100%{transform:rotate(0deg);top:0em;}
+}
+/*Main*/
+h1{
+	text-align: center;
+}
+body{
+	background-image:url("fond.jpg");
+	color:yellow;
+}
+p{
+	font-size: 23px;
+	font-weight: bold;
+}
+button{
+	color:yellow;
+	background-color:black;
+	border-radius:20px;
+	font-size: 2em;
+	width:9em;
+	height:2em;
+}
+button:hover{
+	color:black;
+	background-color:yellow;
+}
+button:active{
+	color:green;
+	background-color: red;
+}
+/*Id*/
+#diceRequest{
+	display:flex;
+	flex-direction:row;
+	text-align: center;
+	align-items: center;
+}
+#footer{
+	display:flex;
+	text-align:center;
+	flex-direction:row;
+	align-items:center;
+}
+#resultat{
+	font-size:1.5em;
+	font-weight:bold;
+}
+/*Class*/
+/*.ship1{
+	animation-name: rotation;
+	position:relative;
+	animation-duration: 4s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+
+}*/
+.color-dice:hover .titleDice figure{
+	animation-name: roll;
+	position:relative;
+	animation-duration: 4s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+
+}
+.res{
+	border: 2px solid yellow;
+	width:100px;
+	padding:2em;
+	border-radius:20px;
+	margin-top:3em; 
+}
+.pool{
+	border: 2px solid yellow;
+	width:200px;
+	margin-left:5em;
+	padding:2em;
+	border-radius:20px;
+	margin-top:3em; 
+}
+.ship2{
+	width:20px;
+	height:20px;
+	/*animation-name: rotation;
+	position:relative;
+	animation-duration: 4s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+	animation-direction: reverse;*/
+}
+
+.sw1{
+	color:green;
+	/*animation-name: starfight1;
+	position:relative;
+	animation-duration: 10s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;*/
+}
+.sw2{
+	color:red;
+	/*animation-name: starfight2;
+	position:relative;
+	animation-duration: 10s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: linear;
+	animation-direction: reverse;*/
+}
+
+.objet:nth-child(1)
+{
+    order: 1;
+    flex:1;
+}
+.objet:nth-child(2)
+{
+    order: 5;
+    flex:1;
+
+
+}
+.objet:nth-child(3)
+{
+    order: 2;
+    flex:1;
+}
+.objet:nth-child(4)
+{
+    order: 4;
+    flex:1;
+}
+.objet:nth-child(5)
+{
+    order: 3;
+    flex:1;
+
+}
+.bouton{
+	text-align: center;
+
+}.Dice{
+	margin-top: 1em;
+}
+
+.objet2:nth-child(1){
+	flex:1;
+}
+.objet2:nth-child(2){
+	flex:1;
+}
+.objet2:nth-child(3){
+	flex:1;
+}
